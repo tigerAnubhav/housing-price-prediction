@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>housing.core.api &mdash; Housing Price Prediction  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/thebelab-helper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="housing.core.api.contextmanager" href="housing.core.api.contextmanager.html" />
+    <link rel="prev" title="housing" href="../api/housing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Housing Price Prediction
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project_overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_guide.html">API Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api/housing.html">housing</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">housing.core.api</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.contextmanager.html">housing.core.api.contextmanager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.create_client.html">housing.core.api.create_client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.create_context.html">housing.core.api.create_context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.custom_train_test_split.html">housing.core.api.custom_train_test_split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.display_as_tabs.html">housing.core.api.display_as_tabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_dataframe.html">housing.core.api.get_dataframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_feature_names_from_column_transformer.html">housing.core.api.get_feature_names_from_column_transformer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_package_path.html">housing.core.api.get_package_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.hash_object.html">housing.core.api.hash_object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.import_python_file.html">housing.core.api.import_python_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.initialize_environment.html">housing.core.api.initialize_environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.is_tracker_supported.html">housing.core.api.is_tracker_supported</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.list_datasets.html">housing.core.api.list_datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.list_jobs.html">housing.core.api.list_jobs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_dataframe.html">housing.core.api.load_dataframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_dataset.html">housing.core.api.load_dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_job_processors.html">housing.core.api.load_job_processors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_pipeline.html">housing.core.api.load_pipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.merge_expectations.html">housing.core.api.merge_expectations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.merge_info.html">housing.core.api.merge_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.register_processor.html">housing.core.api.register_processor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_data.html">housing.core.api.save_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_dataset.html">housing.core.api.save_dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_pipeline.html">housing.core.api.save_pipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.setanalyse.html">housing.core.api.setanalyse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.setanalyse_df.html">housing.core.api.setanalyse_df</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.silence_common_warnings.html">housing.core.api.silence_common_warnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.silence_stdout.html">housing.core.api.silence_stdout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.start_experiment.html">housing.core.api.start_experiment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.string_cleaning.html">housing.core.api.string_cleaning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="housing.data_processing.api.html">housing.data_processing.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.eda.api.html">housing.eda.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.reports.api.html">housing.reports.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.regression.api.html">housing.regression.api</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best_practices.html">Best practices</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Housing Price Prediction</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api_guide.html">API Documentation</a> &raquo;</li>
+        
+          <li><a href="../api/housing.html">housing</a> &raquo;</li>
+        
+      <li>housing.core.api</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_autosummary/housing.core.api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="housing-core-api">
+<h1>housing.core.api<a class="headerlink" href="#housing-core-api" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Description</p>
+<span class="target" id="module-housing.core.api"></span><p>Core utilities common to all usecases.</p>
+<p>This is a namespace housing all the core utilties that could be useful to
+an end user. This includes IO utilities, Job management utilities and utilities
+to manage project configuration.</p>
+<p class="rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.contextmanager.html#housing.core.api.contextmanager" title="housing.core.api.contextmanager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contextmanager</span></code></a>(func)</p></td>
+<td><p>&#64;contextmanager decorator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.create_client.html#housing.core.api.create_client" title="housing.core.api.create_client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_client</span></code></a>(cfg)</p></td>
+<td><p>Create a tracking client.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.create_context.html#housing.core.api.create_context" title="housing.core.api.create_context"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_context</span></code></a>(config_file)</p></td>
+<td><p>Create a context object from a config file path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.custom_train_test_split.html#housing.core.api.custom_train_test_split" title="housing.core.api.custom_train_test_split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">custom_train_test_split</span></code></a>(df[, splitter, by])</p></td>
+<td><p>Split the provided dataset using custom criteria.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.display_as_tabs.html#housing.core.api.display_as_tabs" title="housing.core.api.display_as_tabs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">display_as_tabs</span></code></a>(figs[, width, height, cloud_env])</p></td>
+<td><p>To display multiple dataset outputs as tabbed panes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.get_dataframe.html#housing.core.api.get_dataframe" title="housing.core.api.get_dataframe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dataframe</span></code></a>(arr, feature_names)</p></td>
+<td><p>Convert an an numpy array into a dataframe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.get_feature_names_from_column_transformer.html#housing.core.api.get_feature_names_from_column_transformer" title="housing.core.api.get_feature_names_from_column_transformer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_from_column_transformer</span></code></a>(…)</p></td>
+<td><p>Get feature names from a sklearn column transformer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.get_package_path.html#housing.core.api.get_package_path" title="housing.core.api.get_package_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_package_path</span></code></a>()</p></td>
+<td><p>Get the path of the current installed housing package.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.hash_object.html#housing.core.api.hash_object" title="housing.core.api.hash_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hash_object</span></code></a>(obj[, expensive, block_size])</p></td>
+<td><p>Return a content based hash for the input <cite>obj</cite>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.import_python_file.html#housing.core.api.import_python_file" title="housing.core.api.import_python_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">import_python_file</span></code></a>(py_file_path)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.initialize_environment.html#housing.core.api.initialize_environment" title="housing.core.api.initialize_environment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize_environment</span></code></a>([debug, hide_warnings])</p></td>
+<td><p>Initialize the OS Environ with relevant values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.is_tracker_supported.html#housing.core.api.is_tracker_supported" title="housing.core.api.is_tracker_supported"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_tracker_supported</span></code></a>(context)</p></td>
+<td><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if context supports using an experiment tracker.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.list_datasets.html#housing.core.api.list_datasets" title="housing.core.api.list_datasets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list_datasets</span></code></a>(context[, prefix])</p></td>
+<td><p>List datasets available in the data_catalog.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.list_jobs.html#housing.core.api.list_jobs" title="housing.core.api.list_jobs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list_jobs</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.load_dataframe.html#housing.core.api.load_dataframe" title="housing.core.api.load_dataframe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_dataframe</span></code></a>(path)</p></td>
+<td><p>Load parquet file from the <cite>path</cite> specified.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.load_dataset.html#housing.core.api.load_dataset" title="housing.core.api.load_dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_dataset</span></code></a>(context, key[, skip])</p></td>
+<td><p>Return a dataset from the data_catalog.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.load_job_processors.html#housing.core.api.load_job_processors" title="housing.core.api.load_job_processors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_job_processors</span></code></a>(folder)</p></td>
+<td><p>Load job processors defined in py files in the provided path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.load_pipeline.html#housing.core.api.load_pipeline" title="housing.core.api.load_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_pipeline</span></code></a>(path)</p></td>
+<td><p>Load model pipeline from the <cite>path</cite> specified.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.merge_expectations.html#housing.core.api.merge_expectations" title="housing.core.api.merge_expectations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">merge_expectations</span></code></a>(dfA, dfB, onA[, onB, how])</p></td>
+<td><p>Given merged dataframe and expectations analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.merge_info.html#housing.core.api.merge_info" title="housing.core.api.merge_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">merge_info</span></code></a>(left_df, right_df, merge_df)</p></td>
+<td><p>Get the column and row comparison summary of the provided dataframes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.register_processor.html#housing.core.api.register_processor" title="housing.core.api.register_processor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register_processor</span></code></a>(job_name, task_name)</p></td>
+<td><p>Register the decorated function as a data processor task.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.save_data.html#housing.core.api.save_data" title="housing.core.api.save_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_data</span></code></a>(data, path, *[, fs])</p></td>
+<td><p>Save data into the given path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.save_dataset.html#housing.core.api.save_dataset" title="housing.core.api.save_dataset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_dataset</span></code></a>(context, df, key, **kwargs)</p></td>
+<td><p>Return a dataset from the data_catalog.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.save_pipeline.html#housing.core.api.save_pipeline" title="housing.core.api.save_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_pipeline</span></code></a>(pipeline, loc)</p></td>
+<td><p>Save an sklearn pipeline in a location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.setanalyse.html#housing.core.api.setanalyse" title="housing.core.api.setanalyse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setanalyse</span></code></a>(listA, listB[, simplify, …])</p></td>
+<td><p>Given two lists, returns a dictionary of set analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.setanalyse_df.html#housing.core.api.setanalyse_df" title="housing.core.api.setanalyse_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setanalyse_df</span></code></a>(dfA, dfB[, key_cols, …])</p></td>
+<td><p>Given two lists, returns a dictionary of set analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.silence_common_warnings.html#housing.core.api.silence_common_warnings" title="housing.core.api.silence_common_warnings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">silence_common_warnings</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.silence_stdout.html#housing.core.api.silence_stdout" title="housing.core.api.silence_stdout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">silence_stdout</span></code></a>()</p></td>
+<td><p>Silence print stmts on the console unless in debug mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="housing.core.api.start_experiment.html#housing.core.api.start_experiment" title="housing.core.api.start_experiment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start_experiment</span></code></a>(context[, expt_name, …])</p></td>
+<td><p>Start an <code class="docutils literal notranslate"><span class="pre">Experiment</span></code> and track it using the tracking server.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="housing.core.api.string_cleaning.html#housing.core.api.string_cleaning" title="housing.core.api.string_cleaning"><code class="xref py py-obj docutils literal notranslate"><span class="pre">string_cleaning</span></code></a>(string_series[, …])</p></td>
+<td><p>Function to clean strings.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="housing.core.api.contextmanager.html" class="btn btn-neutral float-right" title="housing.core.api.contextmanager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../api/housing.html" class="btn btn-neutral float-left" title="housing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tiger Analytics
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

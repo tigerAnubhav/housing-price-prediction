@@ -1,0 +1,40 @@
+2022-05-31 23:43:04 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:43:04 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:43:04 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:43:40 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:43:40 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:43:40 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:49:02 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:49:02 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:49:02 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:49:02 — housing.core.pipelines.job_runner — INFO — sequential_executor:77 — Running Stage : clean-base-tables
+2022-05-31 23:49:02 — housing.core.pipelines.job_runner — INFO — sequential_executor:79 — Running task : housing : task-44c499c2-264c-4b7a-9c89-bf296fc5884c
+2022-05-31 23:49:03 — housing.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-44c499c2-264c-4b7a-9c89-bf296fc5884c : 0.5799963474273682 seconds
+2022-05-31 23:49:03 — housing.core.pipelines.job_runner — INFO — sequential_executor:88 — None
+2022-05-31 23:49:03 — housing.core.pipelines.job_runner — INFO — sequential_executor:77 — Running Stage : train-test-split
+2022-05-31 23:49:03 — housing.core.pipelines.job_runner — INFO — sequential_executor:79 — Running task : train-test : task-a7b25aa8-066e-4641-a643-3559ed3368fb
+2022-05-31 23:49:03 — housing.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-a7b25aa8-066e-4641-a643-3559ed3368fb : 0.46747303009033203 seconds
+2022-05-31 23:49:03 — housing.core.pipelines.job_runner — INFO — sequential_executor:88 — None
+2022-05-31 23:50:08 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:50:08 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:50:08 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:50:08 — housing.core.pipelines.job_runner — INFO — sequential_executor:77 — Running Stage : feature-pipelines
+2022-05-31 23:50:08 — housing.core.pipelines.job_runner — INFO — sequential_executor:79 — Running task : transform-features : task-bde01023-0991-4a94-a4da-f8e5d851cfec
+2022-05-31 23:50:09 — housing.core.utils — INFO — save_pipeline:52 — Saving pipeline to location /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/artifacts/features.joblib
+2022-05-31 23:50:09 — housing.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-bde01023-0991-4a94-a4da-f8e5d851cfec : 0.8130290508270264 seconds
+2022-05-31 23:50:09 — housing.core.pipelines.job_runner — INFO — sequential_executor:88 — None
+2022-05-31 23:51:06 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:51:06 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:51:06 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:51:06 — housing.core.pipelines.job_runner — INFO — sequential_executor:77 — Running Stage : model-creation
+2022-05-31 23:51:06 — housing.core.pipelines.job_runner — INFO — sequential_executor:79 — Running task : train-model : task-9f4fa924-e86e-4b4e-8ea7-f676febbf1e8
+2022-05-31 23:51:06 — housing.core.utils — INFO — save_pipeline:52 — Saving pipeline to location /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/artifacts/train_pipeline.joblib
+2022-05-31 23:51:06 — housing.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-9f4fa924-e86e-4b4e-8ea7-f676febbf1e8 : 0.17385458946228027 seconds
+2022-05-31 23:51:06 — housing.core.pipelines.job_runner — INFO — sequential_executor:88 — None
+2022-05-31 23:51:22 — housing.core.utils — INFO — initialize_random_seed:480 — Initialized Random Seed : 0
+2022-05-31 23:51:22 — housing.core.context — INFO — create_context:49 — Context created from /mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE__6/capstone_archive/production/conf/config.yml
+2022-05-31 23:51:22 — housing.core.context — INFO — create_context:50 — Package version : 1.0.0
+2022-05-31 23:51:22 — housing.core.pipelines.job_runner — INFO — sequential_executor:77 — Running Stage : model-predict
+2022-05-31 23:51:22 — housing.core.pipelines.job_runner — INFO — sequential_executor:79 — Running task : score-model : task-aa7c8eb3-5ac2-44e3-9663-59a08eb63f36
+2022-05-31 23:51:23 — housing.core.pipelines.task_runner — INFO — run_task:83 — Successfully completed task : task-aa7c8eb3-5ac2-44e3-9663-59a08eb63f36 : 0.48207855224609375 seconds
+2022-05-31 23:51:23 — housing.core.pipelines.job_runner — INFO — sequential_executor:88 — None

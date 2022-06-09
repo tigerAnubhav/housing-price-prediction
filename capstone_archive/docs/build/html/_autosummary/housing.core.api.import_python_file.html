@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>housing.core.api.import_python_file &mdash; Housing Price Prediction  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/thebelab-helper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="housing.core.api.initialize_environment" href="housing.core.api.initialize_environment.html" />
+    <link rel="prev" title="housing.core.api.hash_object" href="housing.core.api.hash_object.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Housing Price Prediction
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project_overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_guide.html">API Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../api/housing.html">housing</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="housing.core.api.html">housing.core.api</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.contextmanager.html">housing.core.api.contextmanager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.create_client.html">housing.core.api.create_client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.create_context.html">housing.core.api.create_context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.custom_train_test_split.html">housing.core.api.custom_train_test_split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.display_as_tabs.html">housing.core.api.display_as_tabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_dataframe.html">housing.core.api.get_dataframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_feature_names_from_column_transformer.html">housing.core.api.get_feature_names_from_column_transformer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.get_package_path.html">housing.core.api.get_package_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.hash_object.html">housing.core.api.hash_object</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">housing.core.api.import_python_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.initialize_environment.html">housing.core.api.initialize_environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.is_tracker_supported.html">housing.core.api.is_tracker_supported</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.list_datasets.html">housing.core.api.list_datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.list_jobs.html">housing.core.api.list_jobs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_dataframe.html">housing.core.api.load_dataframe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_dataset.html">housing.core.api.load_dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_job_processors.html">housing.core.api.load_job_processors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.load_pipeline.html">housing.core.api.load_pipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.merge_expectations.html">housing.core.api.merge_expectations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.merge_info.html">housing.core.api.merge_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.register_processor.html">housing.core.api.register_processor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_data.html">housing.core.api.save_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_dataset.html">housing.core.api.save_dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.save_pipeline.html">housing.core.api.save_pipeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.setanalyse.html">housing.core.api.setanalyse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.setanalyse_df.html">housing.core.api.setanalyse_df</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.silence_common_warnings.html">housing.core.api.silence_common_warnings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.silence_stdout.html">housing.core.api.silence_stdout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.start_experiment.html">housing.core.api.start_experiment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="housing.core.api.string_cleaning.html">housing.core.api.string_cleaning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="housing.data_processing.api.html">housing.data_processing.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.eda.api.html">housing.eda.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.reports.api.html">housing.reports.api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="housing.regression.api.html">housing.regression.api</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../best_practices.html">Best practices</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Housing Price Prediction</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api_guide.html">API Documentation</a> &raquo;</li>
+        
+          <li><a href="../api/housing.html">housing</a> &raquo;</li>
+        
+          <li><a href="housing.core.api.html">housing.core.api</a> &raquo;</li>
+        
+      <li>housing.core.api.import_python_file</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_autosummary/housing.core.api.import_python_file.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="housing-core-api-import-python-file">
+<h1>housing.core.api.import_python_file<a class="headerlink" href="#housing-core-api-import-python-file" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="housing.core.api.import_python_file">
+<code class="sig-prename descclassname">housing.core.api.</code><code class="sig-name descname">import_python_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">py_file_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#housing.core.api.import_python_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="housing.core.api.initialize_environment.html" class="btn btn-neutral float-right" title="housing.core.api.initialize_environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="housing.core.api.hash_object.html" class="btn btn-neutral float-left" title="housing.core.api.hash_object" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tiger Analytics
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

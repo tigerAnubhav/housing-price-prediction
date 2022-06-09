@@ -1,0 +1,298 @@
+2022-05-29 10:58:25 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-f71eb45e-d46c-4737-b949-c20e8ef54004 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 121, in transform_features
+    save_pipeline(
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 55, in save_pipeline
+    joblib.dump(pipeline, loc)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 480, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 487, in dump
+    self.save(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 717, in save_reduce
+    save(state)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 971, in save_dict
+    self._batch_setitems(obj.items())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 997, in _batch_setitems
+    save(v)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 931, in save_list
+    self._batch_appends(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 955, in _batch_appends
+    save(x)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 886, in save_tuple
+    save(element)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 717, in save_reduce
+    save(state)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 971, in save_dict
+    self._batch_setitems(obj.items())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 997, in _batch_setitems
+    save(v)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 931, in save_list
+    self._batch_appends(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 955, in _batch_appends
+    save(x)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 886, in save_tuple
+    save(element)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 687, in save_reduce
+    save(cls)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 1128, in save_type
+    return self.save_global(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 1070, in save_global
+    raise PicklingError(
+_pickle.PicklingError: Can't pickle <class 'feature_engineering.transform_features.<locals>.CombinedAttributesAdder'>: it's not found as feature_engineering.transform_features.<locals>.CombinedAttributesAdder
+2022-05-29 11:11:25 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-8e388761-eed0-48da-b5ef-b70b4d023c18 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 121, in transform_features
+    save_pipeline(
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 55, in save_pipeline
+    joblib.dump(pipeline, loc)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 480, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 487, in dump
+    self.save(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 717, in save_reduce
+    save(state)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 971, in save_dict
+    self._batch_setitems(obj.items())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 997, in _batch_setitems
+    save(v)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 931, in save_list
+    self._batch_appends(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 955, in _batch_appends
+    save(x)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 886, in save_tuple
+    save(element)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 717, in save_reduce
+    save(state)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 971, in save_dict
+    self._batch_setitems(obj.items())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 997, in _batch_setitems
+    save(v)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 931, in save_list
+    self._batch_appends(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 955, in _batch_appends
+    save(x)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 886, in save_tuple
+    save(element)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 687, in save_reduce
+    save(cls)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 282, in save
+    return Pickler.save(self, obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 1128, in save_type
+    return self.save_global(obj)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/pickle.py", line 1070, in save_global
+    raise PicklingError(
+_pickle.PicklingError: Can't pickle <class 'feature_engineering.transform_features.<locals>.CombinedAttributesAdder'>: it's not found as feature_engineering.transform_features.<locals>.CombinedAttributesAdder
+2022-05-29 11:47:51 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-dba804d1-b6ee-4092-8493-6ab03e5927fb : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 780, in get_feature_names_from_column_transformer
+    names = list(transformer.get_feature_names())
+AttributeError: 'StandardScaler' object has no attribute 'get_feature_names'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 96, in transform_features
+    get_feature_names_from_column_transformer(full_pipeline),
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 783, in get_feature_names_from_column_transformer
+    print('names in AE',names)
+UnboundLocalError: local variable 'names' referenced before assignment
+2022-05-29 11:48:34 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-c5aac512-8e02-4a49-b43f-11b2045a6b0a : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 101, in transform_features
+    save_dataset(context, train_X, input_features_ds )
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 119, in save_dataset
+    return utils.save_data(df, ds["uri"], fs=fs, **save_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 441, in save_data
+    return save_csv(data, path, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 392, in save_csv
+    with fs.open(path, mode="wt", newline="") as fp:
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 765, in open
+    self.open(path, mode, block_size, **kwargs), **text_kwargs
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 769, in open
+    f = self._open(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 109, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 187, in __init__
+    self._open()
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 192, in _open
+    self.f = open(self.path, mode=self.mode)
+PermissionError: [Errno 13] Permission denied: '/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/../data/train/housing/train_features.csv'
+2022-05-29 11:49:16 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-ffa62ca2-f967-4fcc-8c98-c45a2770fd2f : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/data_cleaning.py", line 96, in create_training_datasets
+    save_dataset(context, train_X, output_train_features)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 119, in save_dataset
+    return utils.save_data(df, ds["uri"], fs=fs, **save_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 441, in save_data
+    return save_csv(data, path, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 392, in save_csv
+    with fs.open(path, mode="wt", newline="") as fp:
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 765, in open
+    self.open(path, mode, block_size, **kwargs), **text_kwargs
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 769, in open
+    f = self._open(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 109, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 187, in __init__
+    self._open()
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 192, in _open
+    self.f = open(self.path, mode=self.mode)
+PermissionError: [Errno 13] Permission denied: '/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/../data/train/housing/train_features.csv'
+2022-05-29 11:50:16 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-842832c9-45e4-4603-9b69-7b282b1f3ade : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/data_cleaning.py", line 96, in create_training_datasets
+    save_dataset(context, train_X, output_train_features)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 119, in save_dataset
+    return utils.save_data(df, ds["uri"], fs=fs, **save_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 441, in save_data
+    return save_csv(data, path, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 392, in save_csv
+    with fs.open(path, mode="wt", newline="") as fp:
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 765, in open
+    self.open(path, mode, block_size, **kwargs), **text_kwargs
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/spec.py", line 769, in open
+    f = self._open(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 109, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 187, in __init__
+    self._open()
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/fsspec/implementations/local.py", line 192, in _open
+    self.f = open(self.path, mode=self.mode)
+PermissionError: [Errno 13] Permission denied: '/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/../data/train/housing/train_features.csv'
+2022-05-29 16:28:10 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-8509329d-096a-4ce0-a79f-9a4fa76e2843 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 78, in load_dataset
+    ds = _get_val(context.data_catalog["datasets"], key)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 25, in _get_val
+    val = val[key]
+KeyError: 'sales'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/scoring.py", line 28, in score_model
+    test_X = load_dataset(context, input_features_ds)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 82, in load_dataset
+    raise ValueError(
+ValueError: Invalid dataset key: test/sales/features. 
+
+Available datasets: ['/raw/housing', '/processed/housing', '/train/housing/features', '/train/housing/target', '/test/housing/features', '/test/housing/target']
+2022-05-29 16:33:50 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-f0e82e99-fa95-4790-b333-a7a83addafc0 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/scoring.py", line 34, in score_model
+    model_pipeline = load_pipeline(op.join(artifacts_folder, "train_pipeline.joblib"))
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 965, in load_pipeline
+    return joblib.load(path)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 577, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/../artifacts/train_pipeline.joblib'

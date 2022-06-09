@@ -1,0 +1,175 @@
+2022-05-28 10:50:31 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-7d49b32e-3084-447e-bb72-d40e728bd777 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/data_cleaning.py", line 45, in clean_housing_table
+    imputer.fit(housing_df)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/impute/_base.py", line 277, in fit
+    X = self._validate_input(X, in_fit=True)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/impute/_base.py", line 249, in _validate_input
+    raise new_ve from None
+ValueError: Cannot use median strategy with non-numeric data:
+could not convert string to float: 'NEAR BAY'
+2022-05-28 10:50:31 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-7f6c78aa-cc63-4d67-a25b-d90c05998238 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/data_cleaning.py", line 71, in create_training_datasets
+    housing_df_processed = load_dataset(context, input_dataset)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/dataset.py", line 90, in load_dataset
+    df = utils.load_data(data_uri[0], fs=fs, **load_params)
+IndexError: list index out of range
+2022-05-28 11:00:58 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-ff07a244-55f3-4924-b837-6243142701d2 : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/data_cleaning.py", line 95, in create_training_datasets
+    set_.drop("income_cat", axis=1, inplace=True)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/frame.py", line 3990, in drop
+    return super().drop(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 3936, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 3970, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 5018, in drop
+    raise KeyError(f"{labels[mask]} not found in axis")
+KeyError: "['income_cat'] not found in axis"
+2022-05-28 16:59:58 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-e83876f1-c940-438d-bb5b-03e87d85d32a : Unexpected Error
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 109, in transform_features
+    full_pipeline.fit_transform(train_X, train_y),
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 531, in fit_transform
+    result = self._fit_transform(X, y, _fit_transform_one)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 458, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/parallel.py", line 1041, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/pipeline.py", line 740, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/pipeline.py", line 367, in fit_transform
+    Xt = self._fit(X, y, **fit_params_steps)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/pipeline.py", line 292, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/joblib/memory.py", line 352, in __call__
+    return self.func(*args, **kwargs)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/pipeline.py", line 740, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **fit_params)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/sklearn/base.py", line 693, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 74, in transform
+    return np.c_[X, rooms_per_household, population_per_household,
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/__init__.py", line 263, in __getattr__
+    raise AttributeError(f"module 'pandas' has no attribute '{name}'")
+AttributeError: module 'pandas' has no attribute 'c_'
+2022-05-28 17:02:33 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-09ed4ce4-ab9b-45f1-96b9-c2c5ee2af5a2 : Unexpected Error
+Traceback (most recent call last):
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1654, in create_block_manager_from_blocks
+    make_block(values=blocks[0], placement=slice(0, len(axes[0])))
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 3053, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 124, in __init__
+    raise ValueError(
+ValueError: Wrong number of items passed 16, placement implies 13
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 108, in transform_features
+    train_X = get_dataframe(
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 797, in get_dataframe
+    return pd.DataFrame(arr, columns=feature_names)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/frame.py", line 464, in __init__
+    mgr = init_ndarray(data, index, columns, dtype=dtype, copy=copy)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 210, in init_ndarray
+    return create_block_manager_from_blocks(block_values, [columns, index])
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1664, in create_block_manager_from_blocks
+    construction_error(tot_items, blocks[0].shape[1:], axes, e)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1694, in construction_error
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (16512, 16), indices imply (16512, 13)
+2022-05-28 17:05:57 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-7b061bce-423a-4e66-9564-f574a9c14c71 : Unexpected Error
+Traceback (most recent call last):
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1654, in create_block_manager_from_blocks
+    make_block(values=blocks[0], placement=slice(0, len(axes[0])))
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 3053, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 124, in __init__
+    raise ValueError(
+ValueError: Wrong number of items passed 16, placement implies 13
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 110, in transform_features
+    train_X = get_dataframe(
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 797, in get_dataframe
+    return pd.DataFrame(arr, columns=feature_names)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/frame.py", line 464, in __init__
+    mgr = init_ndarray(data, index, columns, dtype=dtype, copy=copy)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 210, in init_ndarray
+    return create_block_manager_from_blocks(block_values, [columns, index])
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1664, in create_block_manager_from_blocks
+    construction_error(tot_items, blocks[0].shape[1:], axes, e)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1694, in construction_error
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (16512, 16), indices imply (16512, 13)
+2022-05-28 17:06:46 — housing.core.pipelines.task_runner — ERROR — run_task:78 — Failed to complete task : task-cea0c90d-de44-4e1a-af90-4738f04ea0e5 : Unexpected Error
+Traceback (most recent call last):
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1654, in create_block_manager_from_blocks
+    make_block(values=blocks[0], placement=slice(0, len(axes[0])))
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 3053, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 124, in __init__
+    raise ValueError(
+ValueError: Wrong number of items passed 16, placement implies 13
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/task_runner.py", line 70, in run_task
+    processor(context, task_params)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/pipelines/processors.py", line 42, in _wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/production/feature_engineering.py", line 110, in transform_features
+    train_X = get_dataframe(
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/core/utils.py", line 797, in get_dataframe
+    return pd.DataFrame(arr, columns=feature_names)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/frame.py", line 464, in __init__
+    mgr = init_ndarray(data, index, columns, dtype=dtype, copy=copy)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 210, in init_ndarray
+    return create_block_manager_from_blocks(block_values, [columns, index])
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1664, in create_block_manager_from_blocks
+    construction_error(tot_items, blocks[0].shape[1:], axes, e)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1694, in construction_error
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (16512, 16), indices imply (16512, 13)

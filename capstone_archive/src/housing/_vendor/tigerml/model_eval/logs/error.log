@@ -1,0 +1,147 @@
+30-05-2022 17:58:46 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 105, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 41, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:27:25 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:27:36 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:28:34 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:29:31 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:33:33 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
+30-05-2022 20:33:41 - ERROR - tigerml.model_eval.plotters.evaluation.regression::inner::196 - Cannot compute residuals_plot. Error - 'FloatBlock' object has no attribute '_reduce'
+Traceback (most recent call last):
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/core/utils/_lib.py", line 194, in inner
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 103, in residuals_plot
+    train_hist = create_residuals_histogram(residuals=self.residual_train)
+  File "/mnt/c/Users/shreya.kanodia/Documents/TIGER_ASSIGNMNETS/MODULE_6/module6.2/regression-py/src/housing/_vendor/tigerml/model_eval/plotters/evaluation/regression.py", line 39, in create_residuals_histogram
+    hvPlot(pd.DataFrame({x_label: residuals})).hist(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 401, in hist
+    return self(kind='hist', x=None, y=y, by=by, **kwds)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/plotting/core.py", line 72, in __call__
+    return self._get_converter(x, y, kind, **kwds)(kind, x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1024, in __call__
+    obj = method(x, y)
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/hvplot/converter.py", line 1466, in hist
+    ymin, ymax = (ys.min(), ys.max())
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/generic.py", line 11214, in stat_func
+    return self._reduce(
+  File "/home/shreyakanodia/miniconda3/envs/env-housing_price-dev/lib/python3.8/site-packages/pandas/core/series.py", line 3896, in _reduce
+    return delegate._reduce(
+AttributeError: 'FloatBlock' object has no attribute '_reduce'
